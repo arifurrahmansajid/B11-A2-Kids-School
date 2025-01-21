@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Quicksand;
+    font-size: 1.25rem;
+  }
+  :root {
+    --orange: #fea301;
+    --sky-blue: #01acfd;
+    --black: black;
+    --white: white;
+  }
+  section {
+    padding: 60px 140px;
+  }
+  .section-heading {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .section-content {
+    margin: 80px 0;
+  }
+  .orange-text {
+    color: var(--orange);
+  }
+  .blue-text {
+    color: var(--sky-blue);
+  }
+  button {
+    border-radius: 12px;
+    width: 197px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .flexx {
+    display: flex;
+    align-items: center;
+  }
+  .nav-bar {
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 20px 140px;
+  }
+  .logo {
+    gap: 8px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .nav-links {
+    gap: 32px;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  #home {
+    color: var(--orange);
+  }
+  #about {
+    color: var(--sky-blue);
+  }
+  #facilities {
+    color: #05d4df;
+  }
+  #admissions {
+    color: #5d58ef;
+  }
+  .contact-btn {
+    background-color: var(--orange);
+  }
+  .hamburger-icon {
+    width: 20px;
+    display: none;
+  }
+  
+  /* hero-page */
+  .hero-page {
+    justify-content: space-between;
+  }
+  .hero-page h1 {
+    font-size: 3.5rem;
+  }
+  .hero-content {
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .hero-page .hero-content {
+    flex-direction: column;
+    width: 50%;
+  }
+  .hero-page button {
+    background-color: black;
+    font-size: 1rem;
+  }
+  .hero-page img {
+    width: 100%;
+  }
+  
+  /* Standard Curriculum */
+  .curriculum {
+    background: url("./B11-A2-Kids-School/assets/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card-container {
+    justify-content: space-between;
+  }
+  .blue-gradient {
+    background: linear-gradient(#def5ff, white);
+    button {
+      color: #64c8ff;
+    }
+  }
+  .yellow-gradient {
+    background: linear-gradient(#fff4dc, white);
+    button {
+      color: #f0aa00;
+    }
+  }
+  .violet-gradient {
+    background: linear-gradient(#f2e8ff, white);
+    button {
+      color: #8700ff;
+    }
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    width: 300px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.05) inset;
+    padding: 40px;
+  }
+  .card-heading {
+    font-size: 1.25rem;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+  .card-btn {
+    background-color: transparent;
+    padding: 0;
+    color: black;
+  }
+  .control-buttons {
+    justify-self: center;
+    gap: 20px;
+  }
+  .control-buttons i {
+    background-color: var(--orange);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 3rem;
+    justify-content: center;
+    color: var(--white);
+  }
+  
+  /* Stories */
+  .stories {
+    background: url("assets/bg.png"),
+      linear-gradient(
+        0deg,
+        rgba(254, 163, 1, 0.3) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
+  }
+  .stories .section-content {
+    gap: 20px;
+    justify-content: center;
+  }
+  .stories .card {
+    padding: 0;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: none;
+    padding-bottom: 30px;
+  }
+  .stories .card img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+  .stories .card h1,
+  p {
+    padding: 0 50px;
+  }
+  .big-card {
+    width: 500px;
+  }
+  .img-container {
+    position: relative;
+  }
+  
+  .batch {
+    position: absolute;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 1rem;
+    border-radius: 48px;
+    padding: 16px 24px;
+    background-color: #3cd8e8;
+    width: fit-content;
+    left: 10%;
+    transform: translateY(-55%);
+  }
+  .magenda-bg{
+      background-color: #5D58F0;
+  }
+  .green-bg{
+      background-color: #95B226;
+  }
+  .small-batch{
+      padding: 8px 16px;
+      font-size: .8rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card-grid .card {
+    width: 250px;
+  }
+  .card-grid .card .card-heading {
+    font-size: 0.8rem;
+  }
+  .stories button {
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  footer {
+    background-color: #01acfd;
+    color: white;
+    padding: 80px 140px;
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+  }
+  .outro {
+    padding-right: 120px;
+  }
+  .outro-heading {
+    font-size: 2rem;
+    gap: 8px;
+  }
+  .outro-heading img {
+    width: 80px;
+  }
+  .outro p {
+    padding: 0;
+    margin: 16px 0;
+    font-size: 1rem;
+  }
+  .about-school .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 8px;
+  }
+  .about-school .links a {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .keep-in-touch .social-media {
+    margin-top: 20px;
+    gap: 8px;
+  }
+  
+ /* Hero Section Responsive Styles */
+/* Tablet Styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    section {
+      padding: 40px 80px;
+    }
+  
+    .nav-bar {
+      padding: 20px 80px;
+    }
+  
+    .section-heading {
+      font-size: 2.5rem;
+    }
+  
+    .hero-page h1 {
+      font-size: 2.8rem;
+    }
+  
+    .card-container {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      max-width: 400px;
+    }
+  
+    .stories .section-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .big-card {
+      width: 80%;
+      max-width: 500px;
+    }
+  
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+    }
+  
+    .card-grid .card {
+      width: 100%;
+    }
+  
+    footer {
+      padding: 60px 80px;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .outro {
+      grid-column: span 2;
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* Mobile Styles (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 20px;
+    }
+  
+    .nav-bar {
+      padding: 15px 20px;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .hamburger-icon {
+      display: block;
+    }
+  
+    .contact-btn {
+      display: none;
+    }
+  
+    .hero-page {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .hero-page .hero-content {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .hero-page h1 {
+      font-size: 2.2rem;
+    }
+  
+    .section-heading {
+      font-size: 2rem;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .big-card {
+      width: 100%;
+    }
+  
+    .card-grid {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  
+    .stories .card h1,
+    .stories .card p {
+      padding: 0 20px;
+    }
+  
+    footer {
+      padding: 40px 20px;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  
+    .outro {
+      grid-column: span 1;
+    }
+  
+    .control-buttons i {
+      width: 40px;
+      height: 40px;
+      font-size: 2rem;
+    }
+  }
+  
+  /* Small Mobile Styles (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    .logo h1 {
+      font-size: 1.2rem;
+    }
+  
+    .logo img {
+      width: 30px;
+    }
+  
+    .hero-page h1 {
+      font-size: 1.8rem;
+    }
+  
+    .section-heading {
+      font-size: 1.6rem;
+    }
+  
+    .card-heading {
+      font-size: 1.1rem;
+    }
+  
+    .batch {
+      padding: 12px 18px;
+      font-size: 0.9rem;
+    }
+  
+    .small-batch {
+      padding: 6px 12px;
+      font-size: 0.7rem;
+    }
+  }
+  
+  /* Navigation Menu for Mobile */
+  @media screen and (max-width: 768px) {
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+  }
+
+  /* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .hamburger-menu span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: black;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Position the lines */
+  .hamburger-menu span:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger-menu span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .hamburger-menu span:nth-child(3) {
+    bottom: 0;
+  }
+  
+  /* Animation for active state */
+  .hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+      margin-right: 30px;
+      
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-direction: column;
+      gap: 20px;
+      transition: all 0.3s ease-in-out;
+      z-index: 1000;
+      
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
